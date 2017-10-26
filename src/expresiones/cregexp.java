@@ -40,7 +40,15 @@ public class cregexp {
 /*
     Algunos ejemplos de expresiones regulares
     Ho(j|l)a -> dara correcto Hola, Hoja, pero incorrecto hoja, hola
-    Ob?scuro -> dara correcto, Oscuro y Obscuro, pero incorrecto oscuro
-    Ho+la -> dara correcto Hola, Hoola, Hoooola, pero incorrecto ola, oooola
+    Cuantificación ejemplos (?,+,*):
+    ob?scuro -> dara correcto, oscuro y obscuro, pero incorrecto obbscuro
+    ob+scuro -> dara correcto obscuro y obbscuro, pero incorrecto oscuro
+    ob*scuro -> dara correcto obscuro, oscuro y obbscuro, pero incorrecto Obscuro
+    (p|m)adre -> data correcto padre y madre
+    (des)?amor -> dara correcto desamor, amor, xamor
+    (des)+amor -> dara correcto desamor, amor, pero incorrecto xamor
+    (des)*amor -> dara correcto desamor, amor, aamor, pero incorrecto mor
+    El punto
+    g.t -> dara correcto, git y got, pero incorrecto goot
 
 */
